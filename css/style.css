@@ -6,6 +6,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .btn-yellow {
@@ -309,6 +310,67 @@ header .container .menu .main-menu .btn-login {
   margin-left: 8px;
 }
 
+.our-services {
+  background-color: #F0EFE9;
+}
+.our-services .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.our-services .container .btn-transparent {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.our-services .container .red-text {
+  color: #F94D1C;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.our-services .container h3 {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  padding-bottom: 30px;
+}
+.our-services .container .box-section {
+  display: flex;
+  gap: 1rem;
+}
+.our-services .container .box-section .box-item {
+  background-color: #FFFFFF;
+}
+.our-services .container .box-section .box-item h4 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+.our-services .container .box-section .box-item p {
+  color: #191919;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.our-services .container .box-section .box-item .btn-round {
+  color: #F0EFE9;
+  background-color: #191919;
+}
+
+.why-choose-us .container {
+  display: flex;
+}
+.why-choose-us .container .main-box {
+  padding: 40px;
+}
+.why-choose-us .container .main-box .box-item {
+  display: flex;
+  padding-top: 10px;
+}
+.why-choose-us .container .main-box .image-meeting {
+  padding-top: 40px;
+}
+
 .subscribe {
   background-color: #F0EFE9;
 }
@@ -352,7 +414,6 @@ footer .container .footer-menu a {
 }
 footer .container .footer-menu a:hover {
   color: #7c7c7c;
-  font-size: 17px;
   text-decoration: underline;
 }
 footer .container .footer-menu .content-box {

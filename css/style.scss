@@ -7,6 +7,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 .btn-yellow {
@@ -334,7 +335,6 @@ header {
         .box-item {
             padding-left: 40px;
             padding-right: 40px;
-            ;
 
             img {
                 max-width: 533px;
@@ -380,12 +380,95 @@ header {
     }
 }
 
+.our-services {
+    background-color: #F0EFE9;
+
+    .container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        .btn-transparent {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+
+        .red-text {
+            color: #F94D1C;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h3 {
+            font-size: 45px;
+            font-weight: 700;
+            font-family: 'DM Sans', sans-serif;
+            padding-bottom: 30px;
+        }
+
+        .box-section {
+            display: flex;
+            gap: 1rem;
+
+            .box-item {
+
+                background-color: #FFFFFF;
+
+                h4 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    font-family: 'DM Sans', sans-serif;
+                }
+
+                p {
+                    color: #191919;
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: 'Inter', sans-serif;
+                }
+
+                .btn-round {
+                    color: #F0EFE9;
+                    background-color: #191919;
+                }
+            }
+        }
+    }
+}
+
+.why-choose-us {
+
+    .container {
+        display: flex;
+
+        .main-box {
+            padding: 40px;
+
+            .box-item {
+                display: flex;
+                padding-top: 10px
+            }
+
+            .image-meeting {
+                padding-top:  40px;;
+            }
+        }
+
+        
+    }
+    
+    
+}
+
 .subscribe {
     background-color: #F0EFE9;
 
     .container {
         padding-top: 40px;
         padding-bottom: 40px;
+
         h3 {
             font-size: 45px;
             font-weight: 700;
@@ -426,7 +509,6 @@ footer {
 
                 &:hover {
                     color: #7c7c7c;
-                    font-size: 17px;
                     text-decoration: underline;
                 }
             }
