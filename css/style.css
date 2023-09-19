@@ -289,9 +289,11 @@ header .container .menu .main-menu .btn-login {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .brands .container img {
-  width: 100px;
+  max-width: 50%;
+  height: auto;
 }
 @media (min-width: 1000px) {
   .brands .container {
@@ -299,7 +301,6 @@ header .container .menu .main-menu .btn-login {
     justify-content: space-around;
   }
   .brands .container img {
-    width: 200px;
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -323,9 +324,13 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .features .container .features-box .section-title {
-  padding-left: 60px;
-  padding-right: 100px;
   padding-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .features .container .features-box .section-title {
+    padding-left: 60px;
+    padding-right: 100px;
+  }
 }
 .features .container .features-box a {
   display: flex;
@@ -378,12 +383,6 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 120px;
   text-align: center;
 }
-@media (min-width: 1400px) {
-  .about-company .container {
-    display: flex;
-    text-align: left;
-  }
-}
 .about-company .container .parent {
   position: relative;
   top: 0;
@@ -402,28 +401,44 @@ header .container .menu .main-menu .btn-login {
   top: 475px;
   left: -25px;
 }
-.about-company .container .text-section {
-  padding-right: 90px;
-  padding-left: 90px;
+@media (min-width: 1400px) {
+  .about-company .container .text-section {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
 }
-.about-company .container .text-section .section-title {
+.about-company .container .section-title {
   padding-bottom: 40px;
 }
-.about-company .container .text-section .btn-section {
+.about-company .container .section-title h2 {
+  font-size: 35px;
+}
+@media (min-width: 1400px) {
+  .about-company .container .section-title h2 {
+    font-size: 45px;
+  }
+}
+.about-company .container .btn-section {
   padding-top: 90px;
 }
-.about-company .container .text-section .btn-section .btn-black {
+.about-company .container .btn-section .btn-black {
   margin-right: 30px;
   display: block;
 }
 @media (min-width: 800px) {
-  .about-company .container .text-section .btn-section .btn-black {
+  .about-company .container .btn-section .btn-black {
     display: inline;
   }
 }
-.about-company .container .text-section .btn-section .intro-video {
+.about-company .container .btn-section .intro-video {
   display: inline;
   margin-left: 8px;
+}
+@media (min-width: 1400px) {
+  .about-company .container {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .our-services {
@@ -435,6 +450,14 @@ header .container .menu .main-menu .btn-login {
 .our-services .container {
   padding-bottom: 120px;
   text-align: center;
+}
+.our-services .container .section-title h2 {
+  font-size: 35px;
+}
+@media (min-width: 1400px) {
+  .our-services .container .section-title h2 {
+    font-size: 45px;
+  }
 }
 @media (min-width: 1400px) {
   .our-services .container {
@@ -511,6 +534,14 @@ header .container .menu .main-menu .btn-login {
 .why-choose-us .container .main-box .section-title {
   padding-bottom: 40px;
 }
+.why-choose-us .container .main-box .section-title h2 {
+  font-size: 35px;
+}
+@media (min-width: 1400px) {
+  .why-choose-us .container .main-box .section-title h2 {
+    font-size: 45px;
+  }
+}
 .why-choose-us .container .main-box h3 {
   font-size: 22px;
   font-weight: 700;
@@ -524,6 +555,10 @@ header .container .menu .main-menu .btn-login {
 }
 .why-choose-us .container .parent {
   position: relative;
+}
+.why-choose-us .container .parent .image-meeting {
+  max-width: 100%;
+  height: auto;
 }
 @media (max-width: 1400px) {
   .why-choose-us .container .parent .image-background {
@@ -561,6 +596,14 @@ header .container .menu .main-menu .btn-login {
 
 .project-and-case .container .section-title {
   text-align: center;
+}
+.project-and-case .container .section-title h2 {
+  font-size: 35px;
+}
+@media (min-width: 1400px) {
+  .project-and-case .container .section-title h2 {
+    font-size: 45px;
+  }
 }
 .project-and-case .container .project-and-cases {
   display: grid;
@@ -659,8 +702,13 @@ header .container .menu .main-menu .btn-login {
 }
 
 .testimonial .white-box {
-  padding: 90px;
+  padding-top: 90px;
   background-color: #F9D783;
+}
+@media (min-width: 900px) {
+  .testimonial .white-box {
+    padding: 90px;
+  }
 }
 .testimonial .white-box .container {
   background-color: #FFFFFF;
@@ -670,9 +718,17 @@ header .container .menu .main-menu .btn-login {
   text-align: center;
   padding-bottom: 0px;
 }
+.testimonial .white-box .container .section-title h2 {
+  font-size: 35px;
+}
+@media (min-width: 1400px) {
+  .testimonial .white-box .container .section-title h2 {
+    font-size: 45px;
+  }
+}
 .testimonial .white-box .container .comments {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
   gap: 100px;
 }
 @media (min-width: 1200px) {
@@ -754,6 +810,8 @@ header .container .menu .main-menu .btn-login {
   z-index: -1;
   overflow: visible;
   padding-bottom: 10px;
+  min-width: 100%;
+  height: auto;
 }
 .article-and-news .container .articles .image-box .yellow-box {
   position: absolute;

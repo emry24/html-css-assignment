@@ -247,8 +247,8 @@ header {
 .showcase {
     background-color: #F0EFE9;
     background-image: url(/images/element-showcase.svg);
-        background-repeat: no-repeat;
-        background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
 
     .container {
         display: flex;
@@ -321,9 +321,11 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
 
         img {
-            width: 100px;
+            max-width: 50%;
+            height: auto;
         }
 
         @media (min-width: 1000px) {
@@ -331,7 +333,6 @@ header {
             justify-content: space-around;
 
             img {
-                width: 200px;
                 padding-top: 40px;
                 padding-bottom: 40px;
             }
@@ -354,12 +355,17 @@ header {
 
             @media (min-width: 1200px) {
                 display: flex;
+
             }
 
             .section-title {
-                padding-left: 60px;
-                padding-right: 100px;
+
                 padding-bottom: 50px;
+
+                @media (min-width: 1200px) {
+                    padding-left: 60px;
+                    padding-right: 100px;
+                }
             }
 
             a {
@@ -421,11 +427,6 @@ header {
         padding-bottom: 120px;
         text-align: center;
 
-        @media (min-width: 1400px) {
-            display: flex;
-            text-align: left;
-        }
-
         .parent {
             position: relative;
             top: 0;
@@ -448,33 +449,54 @@ header {
         }
 
         .text-section {
-            padding-right: 90px;
-            padding-left: 90px;
 
-            .section-title {
-                padding-bottom: 40px;
+            @media (min-width: 1400px) {
+                padding-right: 90px;
+                padding-left: 90px;  
+            }
+            
+        }
+
+
+        .section-title {
+            padding-bottom: 40px;
+
+            h2 {
+                font-size: 35px;
             }
 
-            .btn-section {
-                padding-top: 90px;
-
-                .btn-black {
-                    margin-right: 30px;
-                    display: block;
-
-                    @media (min-width: 800px) {
-                        display: inline;
-                    }
-                }
-
-                .intro-video {
-                    display: inline;
-                    margin-left: 8px;
+            @media (min-width: 1400px) {
+                h2 {
+                    font-size: 45px;
                 }
             }
         }
+
+        .btn-section {
+            padding-top: 90px;
+
+            .btn-black {
+                margin-right: 30px;
+                display: block;
+
+                @media (min-width: 800px) {
+                    display: inline;
+                }
+            }
+
+            .intro-video {
+                display: inline;
+                margin-left: 8px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            display: flex;
+            text-align: left;
+        }
     }
 }
+
 
 .our-services {
     background-color: #F0EFE9;
@@ -485,6 +507,19 @@ header {
     .container {
         padding-bottom: 120px;
         text-align: center;
+
+        .section-title {
+            h2 {
+                font-size: 35px;
+            }
+    
+            @media (min-width: 1400px) {
+                h2 {
+                    font-size: 45px;
+                }
+            }
+        }
+        
 
         @media (min-width: 1400px) {
             text-align: left;
@@ -573,6 +608,15 @@ header {
 
             .section-title {
                 padding-bottom: 40px;
+                h2 {
+                    font-size: 35px;
+                }
+        
+                @media (min-width: 1400px) {
+                    h2 {
+                        font-size: 45px;
+                    }
+                }
             }
 
             h3 {
@@ -583,7 +627,7 @@ header {
 
             .box-item {
                 padding-bottom: 20px;
-                
+
             }
 
             .icon-image {
@@ -594,8 +638,13 @@ header {
         .parent {
             position: relative;
 
+            .image-meeting {
+                max-width: 100%;
+                height: auto;
+            }
+
             .image-background {
-                
+
                 @media (max-width: 1400px) {
                     display: none;
                 }
@@ -614,7 +663,7 @@ header {
                 position: relative;
                 top: 0;
                 left: 0;
-    
+
                 .image-background {
                     position: relative;
                     top: 350px;
@@ -622,9 +671,9 @@ header {
                     max-width: 900px;
                     // max-width bör vara ca 1057px 
                     z-index: -1;
-                    overflow: visible;   
+                    overflow: visible;
                 }
-    
+
                 .image-meeting {
                     position: absolute;
                     top: 120px;
@@ -641,6 +690,16 @@ header {
 
         .section-title {
             text-align: center;
+
+            h2 {
+                font-size: 35px;
+            }
+    
+            @media (min-width: 1400px) {
+                h2 {
+                    font-size: 45px;
+                }
+            }
         }
 
         .project-and-cases {
@@ -738,6 +797,7 @@ header {
             .team-member {
                 max-width: 300px;
                 min-width: 150px;
+
                 img {
                     max-width: 100%;
                     height: auto;
@@ -750,31 +810,49 @@ header {
                     padding-top: 35px;
                 }
             }
-        } 
+        }
     }
 }
 
 .testimonial {
 
     .white-box {
-        padding: 90px;
+        padding-top: 90px;
         background-color: #F9D783;
+
+        @media (min-width: 900px) {
+            padding: 90px;
+        }
 
         .container {
             background-color: #FFFFFF;
             max-width: 1500px;
 
-
             .section-title {
                 text-align: center;
                 padding-bottom: 0px;
+    
+                h2 {
+                    font-size: 35px;
+                }
+        
+                @media (min-width: 1400px) {
+                    h2 {
+                        font-size: 45px;
+                    }
+                }
             }
 
             .comments {
+                    padding-left: 20px;
+                    padding-right: 20px; 
+                    gap: 100px;
 
-                padding-left: 80px;
-                padding-right: 80px;
-                gap: 100px;
+                @media (min-width: 900px) {
+                      
+                }
+                
+                
 
                 @media (min-width:1200px) {
                     display: flex;
@@ -850,7 +928,6 @@ header {
         }
 
         .articles {
-
             gap: 2rem;
             padding-bottom: 50px;
 
@@ -866,6 +943,8 @@ header {
                     z-index: -1;
                     overflow: visible;
                     padding-bottom: 10px;
+                    min-width: 100%;
+                    height: auto;
                 }
 
                 .yellow-box {
