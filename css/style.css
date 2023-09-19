@@ -216,6 +216,9 @@ header .container .menu .main-menu .btn-login {
 
 .showcase {
   background-color: #F0EFE9;
+  background-image: url(/images/element-showcase.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
 }
 .showcase .container {
   display: flex;
@@ -330,6 +333,12 @@ header .container .menu .main-menu .btn-login {
 }
 .features .container .features-box h2 {
   padding-bottom: 40px;
+  font-size: 35px;
+}
+@media (min-width: 800px) {
+  .features .container .features-box h2 {
+    font-size: 45px;
+  }
 }
 .features .container .features-box h3 {
   font-size: 22px;
@@ -419,6 +428,9 @@ header .container .menu .main-menu .btn-login {
 
 .our-services {
   background-color: #F0EFE9;
+  background-image: url(/images/element-services.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 .our-services .container {
   padding-bottom: 120px;
@@ -491,13 +503,13 @@ header .container .menu .main-menu .btn-login {
 }
 
 .why-choose-us .container {
-  display: flex;
+  text-align: center;
 }
 .why-choose-us .container .main-box {
   padding-right: 0px;
 }
 .why-choose-us .container .main-box .section-title {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .why-choose-us .container .main-box h3 {
   font-size: 22px;
@@ -505,30 +517,46 @@ header .container .menu .main-menu .btn-login {
   font-family: "DM Sans", sans-serif;
 }
 .why-choose-us .container .main-box .box-item {
-  display: flex;
-  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .why-choose-us .container .main-box .icon-image {
   padding-right: 30px;
 }
 .why-choose-us .container .parent {
   position: relative;
-  top: 0;
-  left: 0;
 }
-.why-choose-us .container .parent .image-background {
-  position: relative;
-  top: 350px;
-  right: -80px;
-  max-width: 900px;
-  z-index: -1;
-  overflow: visible;
+@media (max-width: 1400px) {
+  .why-choose-us .container .parent .image-background {
+    display: none;
+  }
 }
-.why-choose-us .container .parent .image-meeting {
-  position: absolute;
-  top: 120px;
-  left: 180px;
-  padding-top: 10px;
+@media (min-width: 1400px) {
+  .why-choose-us .container {
+    display: flex;
+    text-align: left;
+  }
+  .why-choose-us .container .box-item {
+    display: flex;
+  }
+  .why-choose-us .container .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .why-choose-us .container .parent .image-background {
+    position: relative;
+    top: 350px;
+    right: -80px;
+    max-width: 900px;
+    z-index: -1;
+    overflow: visible;
+  }
+  .why-choose-us .container .parent .image-meeting {
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    padding-top: 10px;
+  }
 }
 
 .project-and-case .container .section-title {
@@ -589,15 +617,35 @@ header .container .menu .main-menu .btn-login {
   background-color: #F9D783;
 }
 .meet-our-team .container .section-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+}
+.meet-our-team .container .section-title h2 {
+  font-size: 35px;
+  padding-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .meet-our-team .container .section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .meet-our-team .container .section-title h2 {
+    font-size: 45px;
+    padding-bottom: 0px;
+  }
 }
 .meet-our-team .container .image-section {
   display: flex;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   padding-bottom: 90px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.meet-our-team .container .image-section .team-member {
+  max-width: 300px;
+  min-width: 150px;
 }
 .meet-our-team .container .image-section .team-member img {
   max-width: 100%;
@@ -620,18 +668,24 @@ header .container .menu .main-menu .btn-login {
 }
 .testimonial .white-box .container .section-title {
   text-align: center;
+  padding-bottom: 0px;
 }
 .testimonial .white-box .container .comments {
-  display: flex;
   padding-left: 80px;
   padding-right: 80px;
   gap: 100px;
+}
+@media (min-width: 1200px) {
+  .testimonial .white-box .container .comments {
+    display: flex;
+  }
 }
 .testimonial .white-box .container .comments .comment-box {
   padding-bottom: 15px;
 }
 .testimonial .white-box .container .comments .comment-box .stars {
   padding-bottom: 20px;
+  padding-top: 90px;
 }
 .testimonial .white-box .container .comments .section-title {
   padding-top: 0px;
@@ -658,6 +712,9 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 90px;
 }
 
+.article-and-news {
+  padding-bottom: 90px;
+}
 .article-and-news .container {
   text-align: center;
 }
@@ -683,7 +740,7 @@ header .container .menu .main-menu .btn-login {
 }
 .article-and-news .container .articles {
   gap: 2rem;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
 }
 .article-and-news .container .articles .image-box {
   position: relative;

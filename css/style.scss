@@ -246,6 +246,9 @@ header {
 
 .showcase {
     background-color: #F0EFE9;
+    background-image: url(/images/element-showcase.svg);
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
 
     .container {
         display: flex;
@@ -347,7 +350,6 @@ header {
         }
 
         .features-box {
-
             padding-right: 10px;
 
             @media (min-width: 1200px) {
@@ -367,6 +369,11 @@ header {
 
             h2 {
                 padding-bottom: 40px;
+                font-size: 35px;
+
+                @media (min-width: 800px) {
+                    font-size: 45px;
+                }
             }
 
             h3 {
@@ -454,7 +461,7 @@ header {
                 .btn-black {
                     margin-right: 30px;
                     display: block;
-                    
+
                     @media (min-width: 800px) {
                         display: inline;
                     }
@@ -471,6 +478,9 @@ header {
 
 .our-services {
     background-color: #F0EFE9;
+    background-image: url(/images/element-services.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
 
     .container {
         padding-bottom: 120px;
@@ -556,13 +566,13 @@ header {
 .why-choose-us {
 
     .container {
-        display: flex;
+        text-align: center;
 
         .main-box {
             padding-right: 0px;
 
             .section-title {
-                padding-bottom: 20px;
+                padding-bottom: 40px;
             }
 
             h3 {
@@ -572,8 +582,8 @@ header {
             }
 
             .box-item {
-                display: flex;
-                padding-top: 20px
+                padding-bottom: 20px;
+                
             }
 
             .icon-image {
@@ -583,24 +593,44 @@ header {
 
         .parent {
             position: relative;
-            top: 0;
-            left: 0;
 
             .image-background {
-                position: relative;
-                top: 350px;
-                right: -80px;
-                max-width: 900px;
-                // max-width bör vara ca 1057px 
-                z-index: -1;
-                overflow: visible;
+                
+                @media (max-width: 1400px) {
+                    display: none;
+                }
+            }
+        }
+
+        @media (min-width: 1400px) {
+            display: flex;
+            text-align: left;
+
+            .box-item {
+                display: flex;
             }
 
-            .image-meeting {
-                position: absolute;
-                top: 120px;
-                left: 180px;
-                padding-top: 10px;
+            .parent {
+                position: relative;
+                top: 0;
+                left: 0;
+    
+                .image-background {
+                    position: relative;
+                    top: 350px;
+                    right: -80px;
+                    max-width: 900px;
+                    // max-width bör vara ca 1057px 
+                    z-index: -1;
+                    overflow: visible;   
+                }
+    
+                .image-meeting {
+                    position: absolute;
+                    top: 120px;
+                    left: 180px;
+                    padding-top: 10px;
+                }
             }
         }
     }
@@ -628,7 +658,6 @@ header {
                 grid-template-rows: auto 1fr auto;
                 color: #191919;
                 text-decoration: none;
-
 
                 img {
                     width: 100%;
@@ -679,18 +708,36 @@ header {
     .container {
 
         .section-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            text-align: center;
+
+            h2 {
+                font-size: 35px;
+                padding-bottom: 50px;
+            }
+
+            @media (min-width: 1200px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left;
+
+                h2 {
+                    font-size: 45px;
+                    padding-bottom: 0px;
+                }
+            }
         }
 
         .image-section {
             display: flex;
             column-gap: 2rem;
             padding-bottom: 90px;
+            flex-wrap: wrap;
+            justify-content: center;
 
             .team-member {
-
+                max-width: 300px;
+                min-width: 150px;
                 img {
                     max-width: 100%;
                     height: auto;
@@ -703,7 +750,7 @@ header {
                     padding-top: 35px;
                 }
             }
-        }
+        } 
     }
 }
 
@@ -720,19 +767,25 @@ header {
 
             .section-title {
                 text-align: center;
+                padding-bottom: 0px;
             }
 
             .comments {
-                display: flex;
+
                 padding-left: 80px;
                 padding-right: 80px;
                 gap: 100px;
+
+                @media (min-width:1200px) {
+                    display: flex;
+                }
 
                 .comment-box {
                     padding-bottom: 15px;
 
                     .stars {
                         padding-bottom: 20px;
+                        padding-top: 90px;
                     }
                 }
 
@@ -770,6 +823,7 @@ header {
 }
 
 .article-and-news {
+    padding-bottom: 90px;
 
     .container {
         text-align: center;
@@ -779,7 +833,6 @@ header {
         }
 
         .section-title {
-            
             justify-content: space-between;
             align-items: center;
 
@@ -799,7 +852,7 @@ header {
         .articles {
 
             gap: 2rem;
-            padding-bottom: 90px;
+            padding-bottom: 50px;
 
             .image-box {
                 position: relative;
@@ -886,7 +939,7 @@ header {
         }
 
         a {
-            display: flex;  
+            display: flex;
             align-items: center;
         }
 
@@ -927,7 +980,7 @@ footer {
                 padding-top: 30px;
                 padding-bottom: 30px;
 
-                .item {    
+                .item {
                     text-align: center;
                 }
 
@@ -947,7 +1000,7 @@ footer {
                     grid-template-columns: 1fr 1fr;
 
                     .item-1 {
-                        grid-column: 1 / 3; 
+                        grid-column: 1 / 3;
                     }
                 }
 
@@ -958,7 +1011,7 @@ footer {
                     gap: 3rem;
                     padding-top: 90px;
                     padding-bottom: 90px;
-                    
+
                     .item {
                         text-align: left;
                     }
@@ -987,13 +1040,13 @@ footer {
                         font-size: 16px;
                         padding-top: 30px;
                     }
-    
+
                     h4 {
                         padding-bottom: 20px;
                         padding-top: 0px;
                         font-weight: bold;
                     }
-                    
+
                 }
 
                 a {
