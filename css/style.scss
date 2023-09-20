@@ -947,6 +947,10 @@ header {
             align-items: center;
             display: flex;
             flex-direction: column;
+
+            h2 {
+               font-size: 35px; 
+            }
             
 
             .browse-button {
@@ -957,6 +961,10 @@ header {
             @media (min-width: 1400px) {
                 display: flex;
                 flex-direction: row;
+
+                h2 {
+                    font-size: 45px;
+                }
 
                 .browse-button {
                     padding-top: 0px;
@@ -1040,12 +1048,17 @@ header {
         padding-bottom: 90px;
         text-align: center;
 
-        h3 {
-            font-size: 45px;
+        h2 {
+            font-size: 35px;
             font-weight: 700;
             font-family: 'DM Sans', sans-serif;
             padding-right: 0px;
             padding-bottom: 40px;
+
+            @media (min-width: 1400px) {
+                font-size: 45px;
+                padding-bottom: 0px;
+            }
         }
 
         input {
@@ -1070,7 +1083,7 @@ header {
             display: flex;
             gap: 20px;
 
-            h3 {
+            h2 {
                 padding-right: 160px;
                 padding-bottom: 0px;
             }
@@ -1102,7 +1115,8 @@ footer {
                 padding-bottom: 30px;
 
                 .item {
-                    text-align: center;
+                   padding-top: 0px;  
+                   padding-bottom: 40px;
                 }
 
                 p {
@@ -1116,7 +1130,7 @@ footer {
                     font-weight: bold;
                 }
 
-                @media (min-width: 995px) {
+                @media (min-width: 750px) {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
 
@@ -1125,7 +1139,7 @@ footer {
                     }
                 }
 
-                @media (min-width: 1400px) {
+                @media (min-width: 1100px) {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
                     grid-template-rows: 1fr;
@@ -1188,18 +1202,17 @@ footer {
         border-top: 1px solid #DAD9D3;
 
         .container {
-            
-            
             font-size: 12px;
             font-weight: 400;
             color: #FFFFFF;
             font-family: 'Inter', sans-serif;
             padding-top: 20px;
-            padding-bottom: 16px;
+            padding-bottom: 20px;
             
             span {
                 display: flex;
                 justify-content: center;
+                align-items: center;
             }
           
 
@@ -1207,17 +1220,21 @@ footer {
                 display: flex;
                 justify-content: space-between;
                 font-size: 16px;
+                
             }
 
             .social-media {
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 padding-top: 15px;
 
                 @media (min-width: 800px) {
                     display: flex;
                     justify-content: right;
+                    padding-top: 0px;
                 }
+
                 a {
                     color: #FFFFFF;
                     font-size: 1.2rem;
