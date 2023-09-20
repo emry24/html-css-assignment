@@ -324,6 +324,7 @@ header {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        padding-top: 40px;
 
         img {
             max-width: 50%;
@@ -333,11 +334,8 @@ header {
         @media (min-width: 1000px) {
             display: flex;
             justify-content: space-around;
-
-            img {
-                padding-top: 40px;
-                padding-bottom: 40px;
-            }
+            padding-bottom: 40px;
+            
         }
     }
 }
@@ -345,11 +343,11 @@ header {
 .features {
 
     .container {
-        border: 2px solid #DAD9D3;
         text-align: center;
 
         @media (min-width: 1200px) {
             text-align: left;
+            border: 2px solid #DAD9D3;
         }
 
         .features-box {
@@ -367,7 +365,11 @@ header {
                 @media (min-width: 1200px) {
                     padding-left: 60px;
                     padding-right: 100px;
-                }
+
+                    .btn-yellow {
+                        width: 100% 
+                    }
+                }   
             }
 
             a {
@@ -406,17 +408,18 @@ header {
                 grid-template-columns: 1fr;
                 padding-right: 0px;
                 padding-top: 0px;
-                padding-bottom: 120px;
+                padding-bottom: 60px;
 
                 .box {
                     padding-top: 30px;
                 }
 
-                @media (min-width:1200px) {
+                @media (min-width: 1200px) {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     padding-right: 100px;
                     padding-top: 120px;
+                    padding-bottom: 120px;
                 }
             }
         }
@@ -473,7 +476,7 @@ header {
            
             .section-title {
                 padding-bottom: 40px;
-    
+
                 h2 {
                     font-size: 35px;
                 }
@@ -805,11 +808,13 @@ header {
 
         .section-title {
             text-align: center;
+            padding-bottom: 50px;
 
             h2 {
                 font-size: 35px;
                 padding-bottom: 50px;
             }
+
 
             @media (min-width: 1200px) {
                 display: flex;
@@ -943,16 +948,16 @@ header {
     .container {
 
         .section-title {
-            justify-content: space-between;
-            align-items: center;
             display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center; 
             flex-direction: column;
 
             h2 {
                font-size: 35px; 
             }
             
-
             .browse-button {
                 padding-top: 40px;
                 padding-bottom: 40px;
@@ -961,6 +966,8 @@ header {
             @media (min-width: 1400px) {
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
 
                 h2 {
                     font-size: 45px;
@@ -1220,7 +1227,7 @@ footer {
                 display: flex;
                 justify-content: space-between;
                 font-size: 16px;
-                
+
             }
 
             .social-media {

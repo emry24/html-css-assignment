@@ -290,6 +290,7 @@ header .container .menu .main-menu .btn-login {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 40px;
 }
 .brands .container img {
   max-width: 50%;
@@ -299,20 +300,17 @@ header .container .menu .main-menu .btn-login {
   .brands .container {
     display: flex;
     justify-content: space-around;
-  }
-  .brands .container img {
-    padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 
 .features .container {
-  border: 2px solid #DAD9D3;
   text-align: center;
 }
 @media (min-width: 1200px) {
   .features .container {
     text-align: left;
+    border: 2px solid #DAD9D3;
   }
 }
 .features .container .features-box {
@@ -330,6 +328,9 @@ header .container .menu .main-menu .btn-login {
   .features .container .features-box .section-title {
     padding-left: 60px;
     padding-right: 100px;
+  }
+  .features .container .features-box .section-title .btn-yellow {
+    width: 100%;
   }
 }
 .features .container .features-box a {
@@ -365,7 +366,7 @@ header .container .menu .main-menu .btn-login {
   grid-template-columns: 1fr;
   padding-right: 0px;
   padding-top: 0px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 .features .container .features-box .grid-box .box {
   padding-top: 30px;
@@ -376,6 +377,7 @@ header .container .menu .main-menu .btn-login {
     grid-template-columns: 1fr 1fr;
     padding-right: 100px;
     padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -694,6 +696,7 @@ header .container .menu .main-menu .btn-login {
 }
 .meet-our-team .container .section-title {
   text-align: center;
+  padding-bottom: 50px;
 }
 .meet-our-team .container .section-title h2 {
   font-size: 35px;
@@ -805,9 +808,10 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 90px;
 }
 .article-and-news .container .section-title {
-  justify-content: space-between;
-  align-items: center;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   flex-direction: column;
 }
 .article-and-news .container .section-title h2 {
@@ -821,6 +825,8 @@ header .container .menu .main-menu .btn-login {
   .article-and-news .container .section-title {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
   }
   .article-and-news .container .section-title h2 {
     font-size: 45px;
