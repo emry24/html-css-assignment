@@ -246,9 +246,11 @@ header {
 
 .showcase {
     background-color: #F0EFE9;
+    // Kod från Emil V
     background-image: url(/images/element-showcase.svg);
     background-repeat: no-repeat;
     background-position: 0% 100%;
+    //
 
     .container {
         display: flex;
@@ -424,6 +426,8 @@ header {
 .about-company {
 
     .container {
+        display: flex;
+        flex-direction: column;
         padding-bottom: 120px;
         text-align: center;
 
@@ -431,68 +435,88 @@ header {
             position: relative;
             top: 0;
             left: 0;
+            display: flex;
+            justify-content: center;
 
             .founder {
-                min-width: 533px;
+                min-width: 523px;
                 padding-top: 120px;
                 padding-left: 90px;
                 position: relative;
                 top: 0;
                 left: 0;
+                display: none;
+
+                @media (min-width: 880px) {
+                    display: block;
+                }
             }
 
             .founderquotes {
                 position: absolute;
                 top: 475px;
                 left: -25px;
+                display: none;
+
+                @media (min-width: 880px) {
+                     display: block;
+                }
             }
         }
 
         .text-section {
 
-            @media (min-width: 1400px) {
-                padding-right: 90px;
-                padding-left: 90px;  
+            @media (min-width: 1200px) {
+                padding-right: 80px;
+                padding-left: 60px;  
             }
-            
-        }
-
-
-        .section-title {
-            padding-bottom: 40px;
-
-            h2 {
-                font-size: 35px;
-            }
-
-            @media (min-width: 1400px) {
+           
+            .section-title {
+                padding-bottom: 40px;
+    
                 h2 {
-                    font-size: 45px;
+                    font-size: 35px;
+                }
+    
+                @media (min-width: 1400px) {
+                    h2 {
+                        font-size: 45px;
+                    }
                 }
             }
-        }
-
-        .btn-section {
-            padding-top: 90px;
-
-            .btn-black {
-                margin-right: 30px;
-                display: block;
-
+    
+            .center-content {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding-top: 58px;
+    
+                .video-button {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+    
+                    p{
+                        margin: 0px;
+                    }
+                }
+    
                 @media (min-width: 800px) {
-                    display: inline;
+                    display: flex;
+                    flex-direction: row;
                 }
-            }
-
-            .intro-video {
-                display: inline;
-                margin-left: 8px;
             }
         }
 
-        @media (min-width: 1400px) {
+        @media (min-width: 1200px) {
             display: flex;
+            flex-direction: row;
             text-align: left;
+
+            .center-content {
+                display: flex;
+                justify-content: left;
+            }
         }
     }
 }
@@ -500,9 +524,11 @@ header {
 
 .our-services {
     background-color: #F0EFE9;
+    // Kod från Emil V
     background-image: url(/images/element-services.svg);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    //
 
     .container {
         padding-bottom: 120px;
@@ -560,6 +586,17 @@ header {
                     padding-top: 30px;
                     padding-left: 20px;
                 }
+
+                // kod från Emil V
+                h3::before {
+                    content: '';
+                    display: block;
+                    width: 40px;
+                    height: 2px;
+                    background-color: #191919;
+                    margin-bottom:  40px;
+                }
+                // 
 
                 p {
                     color: #191919;
@@ -904,25 +941,26 @@ header {
     padding-bottom: 90px;
 
     .container {
-        text-align: center;
-
-        @media (min-width: 1400px) {
-            text-align: left;
-        }
 
         .section-title {
             justify-content: space-between;
             align-items: center;
+            display: flex;
+            flex-direction: column;
+            
 
             .browse-button {
                 padding-top: 40px;
+                padding-bottom: 40px;
             }
 
             @media (min-width: 1400px) {
                 display: flex;
+                flex-direction: row;
 
                 .browse-button {
                     padding-top: 0px;
+                    padding-bottom: 0px;
                 }
             }
         }
@@ -930,21 +968,21 @@ header {
         .articles {
             gap: 2rem;
             padding-bottom: 50px;
+            display: grid;
+            grid-template-columns: 1fr;
+
+            @media (min-width: 1000px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
 
             .image-box {
                 position: relative;
                 top: 0;
                 left: 0;
+                display: flex;
 
                 img {
-                    position: relative;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
-                    overflow: visible;
-                    padding-bottom: 10px;
-                    min-width: 100%;
-                    height: auto;
+                    max-width: 100%;    
                 }
 
                 .yellow-box {
@@ -982,18 +1020,20 @@ header {
                 padding-top: 10px;
             }
 
-            @media (min-width: 1400px) {
-                display: flex;
-            }
+            // @media (min-width: 1400px) {
+            //     display: flex;
+            // }
         }
     }
 }
 
 .subscribe {
     background-color: #F0EFE9;
+    // Kod från Emil V
     background-image: url(/images/element-subscribe.svg);
     background-repeat: no-repeat;
     background-position: 100% 70%;
+    //
 
     .container {
         padding-top: 120px;
@@ -1046,9 +1086,11 @@ footer {
     background-color: #0E1021;
 
     .footer-menu {
+        // Kod från Emil V
         background-image: url(/images/element-footer.svg);
         background-repeat: no-repeat;
         background-position: 100% 100%;
+        //
 
         .container {
             color: #FFFFFF;
@@ -1125,7 +1167,6 @@ footer {
                         padding-top: 0px;
                         font-weight: bold;
                     }
-
                 }
 
                 a {
@@ -1147,16 +1188,36 @@ footer {
         border-top: 1px solid #DAD9D3;
 
         .container {
-            display: flex;
-            justify-content: space-between;
-            font-size: 16px;
+            
+            
+            font-size: 12px;
             font-weight: 400;
             color: #FFFFFF;
             font-family: 'Inter', sans-serif;
             padding-top: 20px;
             padding-bottom: 16px;
+            
+            span {
+                display: flex;
+                justify-content: center;
+            }
+          
+
+            @media (min-width: 800px) {
+                display: flex;
+                justify-content: space-between;
+                font-size: 16px;
+            }
 
             .social-media {
+                display: flex;
+                justify-content: center;
+                padding-top: 15px;
+
+                @media (min-width: 800px) {
+                    display: flex;
+                    justify-content: right;
+                }
                 a {
                     color: #FFFFFF;
                     font-size: 1.2rem;

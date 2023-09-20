@@ -380,6 +380,8 @@ header .container .menu .main-menu .btn-login {
 }
 
 .about-company .container {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 120px;
   text-align: center;
 }
@@ -387,57 +389,80 @@ header .container .menu .main-menu .btn-login {
   position: relative;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
 }
 .about-company .container .parent .founder {
-  min-width: 533px;
+  min-width: 523px;
   padding-top: 120px;
   padding-left: 90px;
   position: relative;
   top: 0;
   left: 0;
+  display: none;
+}
+@media (min-width: 880px) {
+  .about-company .container .parent .founder {
+    display: block;
+  }
 }
 .about-company .container .parent .founderquotes {
   position: absolute;
   top: 475px;
   left: -25px;
+  display: none;
 }
-@media (min-width: 1400px) {
-  .about-company .container .text-section {
-    padding-right: 90px;
-    padding-left: 90px;
+@media (min-width: 880px) {
+  .about-company .container .parent .founderquotes {
+    display: block;
   }
 }
-.about-company .container .section-title {
+@media (min-width: 1200px) {
+  .about-company .container .text-section {
+    padding-right: 80px;
+    padding-left: 60px;
+  }
+}
+.about-company .container .text-section .section-title {
   padding-bottom: 40px;
 }
-.about-company .container .section-title h2 {
+.about-company .container .text-section .section-title h2 {
   font-size: 35px;
 }
 @media (min-width: 1400px) {
-  .about-company .container .section-title h2 {
+  .about-company .container .text-section .section-title h2 {
     font-size: 45px;
   }
 }
-.about-company .container .btn-section {
-  padding-top: 90px;
+.about-company .container .text-section .center-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 58px;
 }
-.about-company .container .btn-section .btn-black {
-  margin-right: 30px;
-  display: block;
+.about-company .container .text-section .center-content .video-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.about-company .container .text-section .center-content .video-button p {
+  margin: 0px;
 }
 @media (min-width: 800px) {
-  .about-company .container .btn-section .btn-black {
-    display: inline;
+  .about-company .container .text-section .center-content {
+    display: flex;
+    flex-direction: row;
   }
 }
-.about-company .container .btn-section .intro-video {
-  display: inline;
-  margin-left: 8px;
-}
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .about-company .container {
     display: flex;
+    flex-direction: row;
     text-align: left;
+  }
+  .about-company .container .center-content {
+    display: flex;
+    justify-content: left;
   }
 }
 
@@ -495,6 +520,14 @@ header .container .menu .main-menu .btn-login {
   font-family: "DM Sans", sans-serif;
   padding-top: 30px;
   padding-left: 20px;
+}
+.our-services .container .box-section .box-item h3::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #191919;
+  margin-bottom: 40px;
 }
 .our-services .container .box-section .box-item p {
   color: #191919;
@@ -771,47 +804,45 @@ header .container .menu .main-menu .btn-login {
 .article-and-news {
   padding-bottom: 90px;
 }
-.article-and-news .container {
-  text-align: center;
-}
-@media (min-width: 1400px) {
-  .article-and-news .container {
-    text-align: left;
-  }
-}
 .article-and-news .container .section-title {
   justify-content: space-between;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .article-and-news .container .section-title .browse-button {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 @media (min-width: 1400px) {
   .article-and-news .container .section-title {
     display: flex;
+    flex-direction: row;
   }
   .article-and-news .container .section-title .browse-button {
     padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 .article-and-news .container .articles {
   gap: 2rem;
   padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1000px) {
+  .article-and-news .container .articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .article-and-news .container .articles .image-box {
   position: relative;
   top: 0;
   left: 0;
+  display: flex;
 }
 .article-and-news .container .articles .image-box img {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  overflow: visible;
-  padding-bottom: 10px;
-  min-width: 100%;
-  height: auto;
+  max-width: 100%;
 }
 .article-and-news .container .articles .image-box .yellow-box {
   position: absolute;
@@ -839,11 +870,6 @@ header .container .menu .main-menu .btn-login {
 }
 .article-and-news .container .articles p {
   padding-top: 10px;
-}
-@media (min-width: 1400px) {
-  .article-and-news .container .articles {
-    display: flex;
-  }
 }
 
 .subscribe {
@@ -982,14 +1008,34 @@ footer .main-footer {
   border-top: 1px solid #DAD9D3;
 }
 footer .main-footer .container {
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   color: #FFFFFF;
   font-family: "Inter", sans-serif;
   padding-top: 20px;
   padding-bottom: 16px;
+}
+footer .main-footer .container span {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 800px) {
+  footer .main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+}
+footer .main-footer .container .social-media {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+@media (min-width: 800px) {
+  footer .main-footer .container .social-media {
+    display: flex;
+    justify-content: right;
+  }
 }
 footer .main-footer .container .social-media a {
   color: #FFFFFF;
