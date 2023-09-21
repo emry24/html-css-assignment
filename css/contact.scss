@@ -206,8 +206,9 @@ header {
         }
 
         .contact-box {
-            border: 1px solid #d3d2c8;
-            padding-top: 20px;
+            border: 1px solid #DAD9D3;
+            padding-top: 40px;
+            padding-bottom: 20px;
             padding-left: 80px;
 
             @media (max-width: 1200px) {
@@ -227,12 +228,12 @@ header {
             }
 
             b {
-                padding-left: 10px;
-                font-size: 18px;
+                padding-left: 15px;
+                font-size: 19px;
             }
 
             p {
-                padding-left: 65px;
+                padding-left: 70px;
             }
         }
     }

@@ -213,6 +213,14 @@ header .container .menu .main-menu .btn-login {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+.article-and-news .container .articles a {
+  text-decoration: none;
+  color: #191919;
+  transition: transform 0.3s;
+}
+.article-and-news .container .articles a:hover {
+  transform: scale(1.06);
+}
 .article-and-news .container .articles .image-box {
   position: relative;
   top: 0;
