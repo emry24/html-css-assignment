@@ -272,10 +272,14 @@ header .container .menu .main-menu .btn-login {
   justify-content: center;
 }
 
+iframe {
+  width: 100%;
+  height: 622px;
+}
 @media (max-width: 800px) {
   iframe {
     width: 100%;
-    height: 350px;
+    height: 370px;
   }
 }
 
