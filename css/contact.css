@@ -217,8 +217,9 @@ header .container .menu .main-menu .btn-login {
 .messages .container form {
   display: flex;
   flex-direction: column;
+  padding-bottom: 16px;
 }
-.messages .container form input {
+.messages .container form input, .messages .container form textarea {
   background-color: #FFFFFF;
   width: 100%;
   border: none;
@@ -228,10 +229,6 @@ header .container .menu .main-menu .btn-login {
   border-radius: 25px;
   padding: 15px 30px;
   margin-top: 16px;
-}
-.messages .container .message-field {
-  padding-bottom: 120px;
-  margin-bottom: 16px;
 }
 .messages .container h2 {
   font-family: "DM Sans", sans-serif;
@@ -414,8 +411,9 @@ footer .main-footer .container .social-media a {
   color: #FFFFFF;
   font-size: 1.2rem;
   margin-left: 10px;
+  transition: transform 0.3s;
 }
 footer .main-footer .container .social-media a:hover {
   color: #7c7c7c;
-  font-size: large;
+  transform: scale(1.4);
 }

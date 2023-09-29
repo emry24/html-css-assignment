@@ -390,6 +390,12 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 120px;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .about-company .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .about-company .container .parent {
   position: relative;
   top: 0;
@@ -412,10 +418,26 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .about-company .container .parent .founderquotes {
+  background-color: #BEEBFF;
   position: absolute;
-  top: 475px;
-  left: -25px;
+  top: 515px;
+  left: 15px;
   display: none;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.about-company .container .parent .founderquotes strong {
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+}
+.about-company .container .parent .founderquotes span {
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #F94D1C;
 }
 @media (min-width: 880px) {
   .about-company .container .parent .founderquotes {
@@ -1079,8 +1101,9 @@ footer .main-footer .container .social-media a {
   color: #FFFFFF;
   font-size: 1.2rem;
   margin-left: 10px;
+  transition: transform 0.3s;
 }
 footer .main-footer .container .social-media a:hover {
   color: #7c7c7c;
-  font-size: large;
+  transform: scale(1.4);
 }
