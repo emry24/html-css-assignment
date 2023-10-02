@@ -106,10 +106,12 @@ header {
                         color: #191919;
                         font-size: 1.2rem;
                         margin-left: 10px;
+                        display: inline-block;
+                        transition: transform 0.3s;
 
                         &:hover {
                             color: #7c7c7c;
-                            font-size: large;
+                            transform: scale(1.4);
                         }
                     }
                 }
