@@ -316,6 +316,7 @@ header .container .menu .main-menu .btn-login {
 .articles .container .article-classroom-digitalization .subjects {
   display: flex;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 @media (max-width: 800px) {
   .articles .container .article-classroom-digitalization .subjects {

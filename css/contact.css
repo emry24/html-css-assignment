@@ -274,6 +274,7 @@ header .container .menu .main-menu .btn-login {
 iframe {
   width: 100%;
   height: 622px;
+  display: block;
 }
 @media (max-width: 800px) {
   iframe {

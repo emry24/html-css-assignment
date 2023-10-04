@@ -131,7 +131,6 @@ header {
     display: flex;
     padding: 16px;
 
-
     .container {
         display: flex;
         align-items: center;
@@ -163,11 +162,9 @@ header {
                 border-bottom: 1px solid #DAD9D3;
                 padding-bottom: 10px;
 
-
                 .contact-information {
                     display: flex;
                     align-items: center;
-
 
                     .content-box {
                         padding-right: 30px;
@@ -189,6 +186,7 @@ header {
                 }
 
                 .social-media {
+
                     a {
                         color: #191919;
                         font-size: 1.2rem;
@@ -211,6 +209,7 @@ header {
                 padding-top: 10px;
 
                 nav {
+
                     a {
                         display: inline-block;
                         color: #191919;
@@ -577,7 +576,6 @@ header {
             }
         }
 
-
         @media (min-width: 1400px) {
             text-align: left;
 
@@ -627,7 +625,6 @@ header {
                     background-color: #191919;
                     margin-bottom: 40px;
                 }
-
                 // 
 
                 p {
@@ -755,6 +752,7 @@ header {
 }
 
 .project-and-case {
+
     .container {
 
         .section-title {
@@ -919,10 +917,6 @@ header {
                 padding-right: 20px;
                 gap: 100px;
 
-                @media (min-width: 900px) {}
-
-
-
                 @media (min-width:1200px) {
                     display: flex;
                 }
@@ -1041,7 +1035,6 @@ header {
                     position: absolute;
                     top: 10px;
                     left: 10px;
-
                     background-color: #F9D783;
                     width: 65px;
                     height: 70px;
@@ -1258,7 +1251,6 @@ footer {
                 justify-content: center;
                 align-items: center;
             }
-
 
             @media (min-width: 800px) {
                 display: flex;
